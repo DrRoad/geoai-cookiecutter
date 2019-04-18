@@ -42,9 +42,9 @@ create_kernel:
 	python -m ipykernel install --user --name $(ENV_NAME) --display-name "$(PROJECT_NAME)"
 
 ## Activate the environment - doesn't work, so commented out
-# env_activate:
-# 	. activate $(PROJECT_NAME)
-# 	@echo ">>> $(PROJECT_NAME) conda environment activated."
+env_activate:
+	. activate $(PROJECT_NAME)
+	@echo ">>> $(PROJECT_NAME) conda environment activated."
 
 ## Run all tests in module
 test:
